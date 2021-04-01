@@ -1,0 +1,47 @@
+// USER VARIABLES SECTION
+
+$accent: #F24F4B // Accent Color
+$fontsize: 18px // Body Font Size
+$textcolor: #432C1F // Text Color
+$lineheight: 1.564 // Document Line Height
+$userfont: Montserrat, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap')
+
+// GENERAL DOCUMENT STYLES
+
+//mixins
+@mixin tr()
+	transition: all .3s ease
+
+::placeholder
+	color: #787878
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	padding-top: 97px
