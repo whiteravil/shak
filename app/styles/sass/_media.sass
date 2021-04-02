@@ -260,6 +260,7 @@
 	.footer-copyright-left
 		font-size: 12px
 		margin-bottom: 13px
+		text-align: center
 
 @media (max-width: 575.98px)
 	.btn
@@ -510,3 +511,105 @@
 		img
 			width: 500px
 			flex-shrink: 0
+	.s-testimonials
+		overflow: hidden
+		padding: 56px 0 51px
+	.testimonials-item
+		width: 100% !important
+		img
+			width: 100% !important
+	.testimonials
+		display: block
+		padding-left: 36px
+		padding-right: 36px
+		.slick-list
+			overflow: visible
+		.slick-slide
+			opacity: 0
+			&.slick-current
+				opacity: 1
+	.slick-slide
+		transition: all .4s ease
+	.testimonials-title
+		margin-bottom: 10px
+	.slick-arrow
+		width: 36px
+		position: absolute
+		top: 50%
+		margin-top: -18px
+		height: 36px
+		border-radius: 50%
+		font-size: 0
+		display: flex
+		align-items: center
+		justify-content: center
+		border: none
+		background-color: transparent
+		outline: none !important
+		&:after
+			content: ''
+			width: 14px
+			height: 8px
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+	.slick-prev
+		border: 1px solid #C8C8C8
+		left: 0
+		&:after
+			background-image: url(../images/dist/icons/arrow-left.svg)
+	.slick-next
+		background-color: #F24F4B
+		box-shadow: 0px 17px 38px rgba(242, 79, 75, 0.54)
+		right: 0
+		&:after
+			background-image: url(../images/dist/icons/arrow-right-white.svg)
+	.s-contacts
+		padding-top: 53px
+		overflow: hidden
+	.contacts-downloads-item img
+		width: 30px
+	.contacts-downloads-item span
+		font-size: 12px
+		text-decoration: underline !important
+		&:after
+			display: none
+	.contacts-mail
+		a
+			font-size: 18px
+	.contacts-form
+		padding: 33px 48px 39px
+	.contacts-form .h3
+		font-size: 22px
+		margin-bottom: 35px
+	.form-row
+		.form-group
+			width: 100%
+	.form-control
+		font-size: 16px
+	.form-group-textarea
+		height: 70px
+	.form-footer
+		display: block
+		.btn
+			width: 100%
+			margin: 0 0 40px
+	.footer-wave img
+		width: 100%
+	.contacts-bg-pattern
+		display: none
+	.footer-middle
+		width: 100%
+	.footer-callback .btn
+		height: 51px
+		line-height: 49px
+		padding: 0 27px
+	.popup-flex
+		padding-left: 20px
+		padding-right: 20px
+	.popup-block
+		padding: 90px 47px 58px
+	.callback-form .h3
+		font-size: 22px
+	.form-qnt
+		margin-bottom: 38px

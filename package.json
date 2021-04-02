@@ -33,6 +33,8 @@
 	"dependencies": {
 		"autosize": "^4.0.2",
 		"inputmask": "^5.0.5",
-		"slick-carousel": "^1.8.1"
+		"jquery": "^3.6.0",
+		"slick-carousel": "^1.8.1",
+		"slick-slider": "^1.8.2"
 	}
 }

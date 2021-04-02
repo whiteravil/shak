@@ -4,7 +4,7 @@ window.$ = $
 
 import Inputmask from "inputmask"
 import autosize from "autosize"
-import 'slick-carousel'
+import 'slick-slider'
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -118,18 +118,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  $('.menu-btn').on('click', function() {
+  $('.menu-btn').on('click', function(e) {
+    e.preventDefault();
     $('.header-right').toggleClass('opened')
   });
 
+  let testimonials = $('.testimonials');
+
   function initTestimSlider() {
     if ( $(window).width() < 576 ) {
-      $('.testimonials').slick({
-        
+      testimonials.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        infinite: false
       })
     }
     else {
-
+      testimonials.slick('unslick')
     }
   }
 
