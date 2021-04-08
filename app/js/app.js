@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     $('.popup-wrapper').removeClass('opened');
     setTimeout(() => {
       $('.popup-wrapper').hide();
-      $('.video-popup-block').html('');
+      $('.video-frame').find('video')[0].pause();
     }, 400);
   }
 
@@ -136,11 +136,25 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     }
     else {
-      testimonials.slick('unslick')
+      if ( testimonials.hasClass('slick-initialized') ) {
+        testimonials.unslick()
+      }
     }
   }
 
   initTestimSlider();
+
+  $('.our-production-video-link').on('click', function(e) {
+    e.preventDefault();
+    let ths = $(this),
+        src = ths.data('src'),
+        frame = $('.video-frame');
+    console.log(frame)
+    if ( frame.find('video').length === 0 ) {
+      frame.append(`<video src="${src}" controls></video>`);
+    }
+    openPopup('#video-popup')
+  });
 
   $(document).on('click', function(e) {
     let tg = $(e.target);

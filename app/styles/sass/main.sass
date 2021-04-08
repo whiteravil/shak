@@ -243,10 +243,6 @@ h3, .h3
 .s-own-production
 	padding: 127px 0 161px
 
-.s-own-production
-	.container
-		width: 1130px
-
 .own-production-row
 	display: flex
 	margin-bottom: 102px
@@ -254,18 +250,24 @@ h3, .h3
 .own-production-img
 	width: 50%
 	flex-shrink: 0
+	padding-right: 33px
+	padding-top: 13px
 	img
 		width: 100%
 
 .own-production-text
-	padding-left: 40px
-	padding-top: 97px
+	padding-left: 95px
 	width: 50%
 	flex-shrink: 0
+	max-width: 524px
+	.h2
+		margin-bottom: 30px
 	p
 		margin-bottom: 27px
 		color: #666
 		max-width: 429px
+	.link
+		margin-top: 28px
 
 .link
 	display: inline-flex
@@ -703,9 +705,9 @@ h3, .h3
 
 .contacts-img
 	position: absolute
-	top: 85px
+	top: 125px
 	left: 50%
-	margin-left: -280px
+	margin-left: -230px
 	img
 		width: 687px
 
@@ -1362,5 +1364,54 @@ textarea.form-control
 
 .phone-mob
 	display: none
+
+.our-production-video
+	position: relative
+	padding-bottom: 56.25%
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	border-radius: 6px
+	overflow: hidden
+
+.our-production-video-link
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	background: linear-gradient(0deg, rgba(1, 1, 1, 0.3), rgba(1, 1, 1, 0.3))
+	span
+		width: 94px
+		height: 94px
+		background-color: rgba(0, 0, 0, 0.6)
+		border-radius: 50%
+		flex-shrink: 0
+		background-image: url(../images/dist/icons/play.svg)
+		background-size: 16px
+		background-repeat: no-repeat
+		background-position: top 50% left calc(50% + 2px)
+
+.video-popup-block
+	width: 1333px
+	padding: 0 !important
+	overflow: hidden
+	margin-left: 15px
+	margin-right: 15px
+	&:after
+		display: none !important
+	.popup-close
+		z-index: 2
+		background-image: url(../images/dist/icons/close-white.svg)
+
+.video-frame
+	display: flex
+	video
+		display: block
+		width: 100%
+		flex-shrink: 0
 
 @import media
