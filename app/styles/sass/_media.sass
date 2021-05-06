@@ -170,6 +170,13 @@
 		padding-top: 5px
 	.footer-logo .logo img
 		width: 130px
+	.testimonials
+		padding: 0 70px
+		.slick-arrow
+			width: 44px
+			height: 44px
+			&:after
+				background-size: 15px
 
 @media (max-width: 991.98px)
 	.main-window-content
@@ -185,12 +192,12 @@
 		min-height: 0
 		padding: 30px
 		width: 60%
-	.testimonials-item
-		img
-			width: 201px
-		&.center
-			img
-				width: 270px
+	// .testimonials-item
+	// 	img
+	// 		width: 201px
+	// 	&.center
+	// 		img
+	// 			width: 270px
 	.contacts-row
 		display: block
 	.contacts-left
@@ -221,6 +228,9 @@
 		flex-wrap: wrap
 		a
 			margin: 0 15px 10px 0
+	.testimonials-item
+		margin: 0 10px
+		width: calc(100% - 20px) !important
 
 @media (max-width: 767.98px)
 	h1, .h1
@@ -231,12 +241,12 @@
 		font-size: 30px
 	.instagram-text
 		padding: 60px 0
-	.testimonials-item
-		img
-			width: 141px
-		&.center
-			img
-				width: 200px
+	// .testimonials-item
+	// 	img
+	// 		width: 141px
+	// 	&.center
+	// 		img
+	// 			width: 200px
 	.footer-row
 		flex-direction: column
 		align-items: center
@@ -510,56 +520,56 @@
 	.s-testimonials
 		overflow: hidden
 		padding: 56px 0 51px
-	.testimonials-item
-		width: 100% !important
-		img
-			width: 100% !important
-	.testimonials
-		display: block
-		padding-left: 36px
-		padding-right: 36px
-		.slick-list
-			overflow: visible
-		.slick-slide
-			opacity: 0
-			&.slick-current
-				opacity: 1
-	.slick-slide
-		transition: all .4s ease
-	.testimonials-title
-		margin-bottom: 10px
-	.slick-arrow
-		width: 36px
-		position: absolute
-		top: 50%
-		margin-top: -18px
-		height: 36px
-		border-radius: 50%
-		font-size: 0
-		display: flex
-		align-items: center
-		justify-content: center
-		border: none
-		background-color: transparent
-		outline: none !important
-		&:after
-			content: ''
-			width: 14px
-			height: 8px
-			background-size: contain
-			background-repeat: no-repeat
-			background-position: center
-	.slick-prev
-		border: 1px solid #C8C8C8
-		left: 0
-		&:after
-			background-image: url(../images/dist/icons/arrow-left.svg)
-	.slick-next
-		background-color: #F24F4B
-		box-shadow: 0px 17px 38px rgba(242, 79, 75, 0.54)
-		right: 0
-		&:after
-			background-image: url(../images/dist/icons/arrow-right-white.svg)
+	// .testimonials-item
+	// 	width: 100% !important
+	// 	img
+	// 		width: 100% !important
+	// .testimonials
+	// 	display: block
+	// 	padding-left: 36px
+	// 	padding-right: 36px
+	// 	.slick-list
+	// 		overflow: visible
+	// 	.slick-slide
+	// 		opacity: 0
+	// 		&.slick-current
+	// 			opacity: 1
+	// .slick-slide
+	// 	transition: all .4s ease
+	// .testimonials-title
+	// 	margin-bottom: 10px
+	// .slick-arrow
+	// 	width: 36px
+	// 	position: absolute
+	// 	top: 50%
+	// 	margin-top: -18px
+	// 	height: 36px
+	// 	border-radius: 50%
+	// 	font-size: 0
+	// 	display: flex
+	// 	align-items: center
+	// 	justify-content: center
+	// 	border: none
+	// 	background-color: transparent
+	// 	outline: none !important
+	// 	&:after
+	// 		content: ''
+	// 		width: 14px
+	// 		height: 8px
+	// 		background-size: contain
+	// 		background-repeat: no-repeat
+	// 		background-position: center
+	// .slick-prev
+	// 	border: 1px solid #C8C8C8
+	// 	left: 0
+	// 	&:after
+	// 		background-image: url(../images/dist/icons/arrow-left.svg)
+	// .slick-next
+	// 	background-color: #F24F4B
+	// 	box-shadow: 0px 17px 38px rgba(242, 79, 75, 0.54)
+	// 	right: 0
+	// 	&:after
+	// 		background-image: url(../images/dist/icons/arrow-right-white.svg)
 	.s-contacts
 		padding-top: 53px
 		overflow: hidden
@@ -628,3 +638,9 @@
 			width: 30px
 	.delivery-block-text
 		font-size: 10px
+	.testimonials
+		padding: 0 50px
+	.testimonials-item
+		transform: none !important
+	.testimonials-title
+		margin-bottom: 35px

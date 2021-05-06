@@ -125,22 +125,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let testimonials = $('.testimonials');
 
-  function initTestimSlider() {
-    if ( $(window).width() < 576 ) {
+  // function initTestimSlider() {
+    // if ( $(window).width() < 576 ) {
       testimonials.slick({
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
         arrows: true,
-        infinite: false
+        infinite: false,
+        draggable: false,
+        infinite: false,
+        mobileFirst: true,
+        responsive: [
+          {
+            breakpoint: 0,
+            settings: {
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3
+            }
+          }
+        ]
       })
-    }
-    else {
-      if ( testimonials.hasClass('slick-initialized') ) {
-        testimonials.unslick()
-      }
-    }
-  }
+  //   }
+  //   else {
+  //     if ( testimonials.hasClass('slick-initialized') ) {
+  //       testimonials.unslick()
+  //     }
+  //   }
+  // }
 
   initTestimSlider();
 
@@ -149,10 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let ths = $(this),
         src = ths.data('src'),
         frame = $('.video-frame');
-    console.log(frame)
     if ( frame.find('video').length === 0 ) {
       frame.append(`<video src="${src}" controls></video>`);
     }
+    frame.find('video')[0].play()
     openPopup('#video-popup')
   });
 
